@@ -1,0 +1,11 @@
+[Unit]
+Description=Automation of water machine scripts
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/Desktop/Capstone/App
+ExecStart=/home/pi/Desktop/Capstone/App/runPrograms.sh
+
+[Install]
+WantedBy=multi-user.target

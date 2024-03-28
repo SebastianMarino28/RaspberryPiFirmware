@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Water Machine Scripts Every 30 Minutes
+
+[Timer]
+OnBootSec=30min
+OnUnitActiveSec=30min
+
+[Install]
+WantedBy=timers.target
